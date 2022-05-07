@@ -71,6 +71,10 @@ public class Vehiculo{
    public Fabricante getFabricante(){
     return fabricante;
   }
+  public static void setCantidadVehiculos(int cantidadVehiculos){
+    Vehiculo.cantidadVehiculos=cantidadVehiculos;
+  }
+  public static int getCantidadVehiculos(){return cantidadVehiculos;}
   public static String vehiculosPorTipo(){
     return "Automoviles: "+Automovil.cantidadAutomoviles+"/nCamionetas; "+Camioneta.cantidadCamionetas+"/nCamiones: "+Camion.cantidadCamiones;
   }
